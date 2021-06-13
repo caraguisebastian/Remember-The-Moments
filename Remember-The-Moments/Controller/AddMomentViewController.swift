@@ -1,5 +1,5 @@
 //
-//  AddPlaceViewController.swift
+//  AddMomentViewController.swift
 //  Remember-The-Moments
 //
 //  Created by Radu Mihaiu on 13.06.2021.
@@ -8,48 +8,42 @@
 import UIKit
 import RealmSwift
 
-class AddPlaceViewController: UIViewController{
+class AddMomentViewController: UIViewController{
     
     @IBOutlet weak var imageSelected: UIImageView!
-    @IBOutlet weak var nameField: UITextField!
-    let realm = try! Realm()
+    @IBOutlet weak var storyDescription: UITextField!
     var imagePicker = UIImagePickerController()
+    let realm = try! Realm()
     
-    override func viewDidLoad() {
-    }
-  
-    @IBAction func addPlacePressed(_ sender: UIButton) {
-        let newPlace = Place()
-        if nameField.text! != "" && imageSelected.image != nil{
-            newPlace.name = nameField.text!
-            newPlace.imageData = imageSelected.image!.pngData()!
-            self.save(place: newPlace)
+    var place: Place?
+    
+    
+    @IBAction func addMomentPressed(_ sender: UIButton) {
+        let newMoment = Moment()
+        if storyDescription.text! != "" && imageSelected.image != nil{
+            newMoment.story = storyDescription.text!
+            newMoment.fileData = imageSelected.image!.pngData()!
+            do{
+                try self.realm.write{
+                    place?.moments.append(newMoment)
+                }
+            } catch{
+                print("Error saving moment \(error)")
+            }
             _ = navigationController?.popViewController(animated: true)
-        } else{
-            let alert = UIAlertController(title: "Couldn't add new place", message: "Please add an image and a name!", preferredStyle: .alert)
+        } else {
+            let alert = UIAlertController(title: "Couldn't add new moment", message: "Please add an image and a story!", preferredStyle: .alert)
             let cancel = UIAlertAction(title: "Try again", style: .cancel, handler: nil)
             
             alert.addAction(cancel)
             present(alert, animated: true, completion: nil)
         }
     }
-    
-    func save(place: Place){
-        do {
-            try realm.write{
-                realm.add(place)
-            }
-        } catch {
-            print("Error saving place: \(error)")
-        }
-        
-    }
-    
 }
 
 //MARK: - UIImagePickerControllerDelegate
 
-extension AddPlaceViewController: UINavigationControllerDelegate, UIImagePickerControllerDelegate{
+extension AddMomentViewController: UINavigationControllerDelegate, UIImagePickerControllerDelegate{
     @IBAction func addPicturePressed(_ sender: UIButton) {
         if UIImagePickerController.isSourceTypeAvailable(.savedPhotosAlbum){
             imagePicker.delegate = self

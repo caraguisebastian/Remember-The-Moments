@@ -14,7 +14,6 @@ class PlacesViewController: UIViewController {
     
     let realm = try! Realm()
     var places: Results<Place>?
-    var imagePicker = UIImagePickerController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +34,14 @@ class PlacesViewController: UIViewController {
         tableView.reloadData()
     }
     
-  
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == K.momentsSegue{
+            let destination = segue.destination as! MomentsViewController
+            if let indexPath = tableView.indexPathForSelectedRow{
+                destination.selectedPlace = places?[indexPath.row]
+            }
+        }
+    }
 
 }
 
@@ -56,8 +62,12 @@ extension PlacesViewController: UITableViewDataSource{
     
 }
 
+// MARK: - TableViewDelegate Methods
+
+
 extension PlacesViewController: UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: K.momentsSegue, sender: self)
     }
+    
 }

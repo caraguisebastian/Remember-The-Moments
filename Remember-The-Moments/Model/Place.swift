@@ -11,5 +11,5 @@ import RealmSwift
 class Place: Object{
     @objc dynamic var name: String = ""
     @objc dynamic var imageData: Data =  UIImage(named:"peepoHappy")!.pngData()!
-    
+    let moments = List<Moment>()
 }

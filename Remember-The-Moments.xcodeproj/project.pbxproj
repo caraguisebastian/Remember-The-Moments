@@ -19,6 +19,10 @@
 		8C9253282676317400A4A4AF /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9253272676317400A4A4AF /* Place.swift */; };
 		8C92532C267644F400A4A4AF /* AddPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C92532B267644F400A4A4AF /* AddPlaceViewController.swift */; };
 		8C925331267681FB00A4A4AF /* MomentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C925330267681FB00A4A4AF /* MomentsViewController.swift */; };
+		8C92533A26768F1C00A4A4AF /* Moment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C92533926768F1C00A4A4AF /* Moment.swift */; };
+		8C92533D26769A1300A4A4AF /* AddMomentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C92533C26769A1300A4A4AF /* AddMomentViewController.swift */; };
+		8C9253412676B5D600A4A4AF /* MomentsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C92533F2676B5D600A4A4AF /* MomentsCell.swift */; };
+		8C9253422676B5D600A4A4AF /* MomentsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C9253402676B5D600A4A4AF /* MomentsCell.xib */; };
 		A8372F83C9FE0AB52B860465 /* Pods_Remember_The_Moments.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76BE4A43F4F171FBAE61FB68 /* Pods_Remember_The_Moments.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +44,10 @@
 		8C9253272676317400A4A4AF /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		8C92532B267644F400A4A4AF /* AddPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlaceViewController.swift; sourceTree = "<group>"; };
 		8C925330267681FB00A4A4AF /* MomentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentsViewController.swift; sourceTree = "<group>"; };
+		8C92533926768F1C00A4A4AF /* Moment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moment.swift; sourceTree = "<group>"; };
+		8C92533C26769A1300A4A4AF /* AddMomentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMomentViewController.swift; sourceTree = "<group>"; };
+		8C92533F2676B5D600A4A4AF /* MomentsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentsCell.swift; sourceTree = "<group>"; };
+		8C9253402676B5D600A4A4AF /* MomentsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MomentsCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +102,7 @@
 				8C9252E2267609CB00A4A4AF /* PlacesViewController.swift */,
 				8C92532B267644F400A4A4AF /* AddPlaceViewController.swift */,
 				8C925330267681FB00A4A4AF /* MomentsViewController.swift */,
+				8C92533C26769A1300A4A4AF /* AddMomentViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -104,6 +113,8 @@
 				8C9252E4267609CB00A4A4AF /* Main.storyboard */,
 				8C92531E267628AE00A4A4AF /* PlacesCell.swift */,
 				8C92531F267628AE00A4A4AF /* PlacesCell.xib */,
+				8C92533F2676B5D600A4A4AF /* MomentsCell.swift */,
+				8C9253402676B5D600A4A4AF /* MomentsCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -112,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				8C9253272676317400A4A4AF /* Place.swift */,
+				8C92533926768F1C00A4A4AF /* Moment.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -193,6 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C9252EB267609CE00A4A4AF /* LaunchScreen.storyboard in Resources */,
+				8C9253422676B5D600A4A4AF /* MomentsCell.xib in Resources */,
 				8C9252E8267609CE00A4A4AF /* Assets.xcassets in Resources */,
 				8C9252E6267609CB00A4A4AF /* Main.storyboard in Resources */,
 				8C925321267628AE00A4A4AF /* PlacesCell.xib in Resources */,
@@ -251,11 +264,14 @@
 				8C925331267681FB00A4A4AF /* MomentsViewController.swift in Sources */,
 				8C92532526762B1500A4A4AF /* Constants.swift in Sources */,
 				8C9252E3267609CB00A4A4AF /* PlacesViewController.swift in Sources */,
+				8C9253412676B5D600A4A4AF /* MomentsCell.swift in Sources */,
 				8C92532C267644F400A4A4AF /* AddPlaceViewController.swift in Sources */,
 				8C9252DF267609CB00A4A4AF /* AppDelegate.swift in Sources */,
 				8C9252E1267609CB00A4A4AF /* SceneDelegate.swift in Sources */,
 				8C925320267628AE00A4A4AF /* PlacesCell.swift in Sources */,
 				8C9253282676317400A4A4AF /* Place.swift in Sources */,
+				8C92533D26769A1300A4A4AF /* AddMomentViewController.swift in Sources */,
+				8C92533A26768F1C00A4A4AF /* Moment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

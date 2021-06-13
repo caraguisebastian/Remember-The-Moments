@@ -11,4 +11,7 @@ class K{
     static let cellIdentifier = "ReusableCell"
     static let cellNibName = "PlacesCell"
     static let momentsSegue = "PlacesToMoments"
+    static let collectionCellIdentifier = "CollectionCell"
+    static let collectionCellNibName = "MomentsCell"
+    static let addMomentSegue = "MomentsToAdd"
 }
