@@ -13,6 +13,12 @@
 		8C9252E6267609CB00A4A4AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C9252E4267609CB00A4A4AF /* Main.storyboard */; };
 		8C9252E8267609CE00A4A4AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C9252E7267609CE00A4A4AF /* Assets.xcassets */; };
 		8C9252EB267609CE00A4A4AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C9252E9267609CE00A4A4AF /* LaunchScreen.storyboard */; };
+		8C925320267628AE00A4A4AF /* PlacesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C92531E267628AE00A4A4AF /* PlacesCell.swift */; };
+		8C925321267628AE00A4A4AF /* PlacesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C92531F267628AE00A4A4AF /* PlacesCell.xib */; };
+		8C92532526762B1500A4A4AF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C92532426762B1500A4A4AF /* Constants.swift */; };
+		8C9253282676317400A4A4AF /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9253272676317400A4A4AF /* Place.swift */; };
+		8C92532C267644F400A4A4AF /* AddPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C92532B267644F400A4A4AF /* AddPlaceViewController.swift */; };
+		8C925331267681FB00A4A4AF /* MomentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C925330267681FB00A4A4AF /* MomentsViewController.swift */; };
 		A8372F83C9FE0AB52B860465 /* Pods_Remember_The_Moments.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76BE4A43F4F171FBAE61FB68 /* Pods_Remember_The_Moments.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +34,12 @@
 		8C9252E7267609CE00A4A4AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C9252EA267609CE00A4A4AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8C9252EC267609CE00A4A4AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C92531E267628AE00A4A4AF /* PlacesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesCell.swift; sourceTree = "<group>"; };
+		8C92531F267628AE00A4A4AF /* PlacesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlacesCell.xib; sourceTree = "<group>"; };
+		8C92532426762B1500A4A4AF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8C9253272676317400A4A4AF /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		8C92532B267644F400A4A4AF /* AddPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlaceViewController.swift; sourceTree = "<group>"; };
+		8C925330267681FB00A4A4AF /* MomentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,11 +78,12 @@
 				8C9252DE267609CB00A4A4AF /* AppDelegate.swift */,
 				8C9252E0267609CB00A4A4AF /* SceneDelegate.swift */,
 				8C9252F726760AB700A4A4AF /* Model */,
-				8C9252F426760AA800A4A4AF /* Controller */,
 				8C9252F626760AAF00A4A4AF /* View */,
+				8C9252F426760AA800A4A4AF /* Controller */,
 				8C9252E7267609CE00A4A4AF /* Assets.xcassets */,
 				8C9252E9267609CE00A4A4AF /* LaunchScreen.storyboard */,
 				8C9252EC267609CE00A4A4AF /* Info.plist */,
+				8C92532426762B1500A4A4AF /* Constants.swift */,
 			);
 			path = "Remember-The-Moments";
 			sourceTree = "<group>";
@@ -79,6 +92,8 @@
 			isa = PBXGroup;
 			children = (
 				8C9252E2267609CB00A4A4AF /* PlacesViewController.swift */,
+				8C92532B267644F400A4A4AF /* AddPlaceViewController.swift */,
+				8C925330267681FB00A4A4AF /* MomentsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -87,6 +102,8 @@
 			isa = PBXGroup;
 			children = (
 				8C9252E4267609CB00A4A4AF /* Main.storyboard */,
+				8C92531E267628AE00A4A4AF /* PlacesCell.swift */,
+				8C92531F267628AE00A4A4AF /* PlacesCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -94,6 +111,7 @@
 		8C9252F726760AB700A4A4AF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8C9253272676317400A4A4AF /* Place.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -177,6 +195,7 @@
 				8C9252EB267609CE00A4A4AF /* LaunchScreen.storyboard in Resources */,
 				8C9252E8267609CE00A4A4AF /* Assets.xcassets in Resources */,
 				8C9252E6267609CB00A4A4AF /* Main.storyboard in Resources */,
+				8C925321267628AE00A4A4AF /* PlacesCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,9 +248,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C925331267681FB00A4A4AF /* MomentsViewController.swift in Sources */,
+				8C92532526762B1500A4A4AF /* Constants.swift in Sources */,
 				8C9252E3267609CB00A4A4AF /* PlacesViewController.swift in Sources */,
+				8C92532C267644F400A4A4AF /* AddPlaceViewController.swift in Sources */,
 				8C9252DF267609CB00A4A4AF /* AppDelegate.swift in Sources */,
 				8C9252E1267609CB00A4A4AF /* SceneDelegate.swift in Sources */,
+				8C925320267628AE00A4A4AF /* PlacesCell.swift in Sources */,
+				8C9253282676317400A4A4AF /* Place.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
