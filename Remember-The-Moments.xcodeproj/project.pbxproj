@@ -58,13 +58,37 @@
 			children = (
 				8C9252DE267609CB00A4A4AF /* AppDelegate.swift */,
 				8C9252E0267609CB00A4A4AF /* SceneDelegate.swift */,
-				8C9252E2267609CB00A4A4AF /* ViewController.swift */,
-				8C9252E4267609CB00A4A4AF /* Main.storyboard */,
+				8C9252F726760AB700A4A4AF /* Model */,
+				8C9252F426760AA800A4A4AF /* Controller */,
+				8C9252F626760AAF00A4A4AF /* View */,
 				8C9252E7267609CE00A4A4AF /* Assets.xcassets */,
 				8C9252E9267609CE00A4A4AF /* LaunchScreen.storyboard */,
 				8C9252EC267609CE00A4A4AF /* Info.plist */,
 			);
 			path = "Remember-The-Moments";
+			sourceTree = "<group>";
+		};
+		8C9252F426760AA800A4A4AF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8C9252E2267609CB00A4A4AF /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8C9252F626760AAF00A4A4AF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8C9252E4267609CB00A4A4AF /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8C9252F726760AB700A4A4AF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
