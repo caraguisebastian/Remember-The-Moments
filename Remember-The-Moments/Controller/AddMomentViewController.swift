@@ -12,11 +12,21 @@ class AddMomentViewController: UIViewController{
     
     @IBOutlet weak var imageSelected: UIImageView!
     @IBOutlet weak var storyDescription: UITextField!
+    @IBOutlet weak var textFieldView: UIView!
+    @IBOutlet weak var addPictureButtonView: UIView!
+    @IBOutlet weak var addMomentButtonView: UIView!
+    
     var imagePicker = UIImagePickerController()
     let realm = try! Realm()
     
     var place: Place?
     
+    override func viewDidLoad() {
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: K.backgroundImage)!)
+        textFieldView.backgroundColor = .clear
+        addPictureButtonView.backgroundColor = .clear
+        addMomentButtonView.backgroundColor = .clear
+    }
     
     @IBAction func addMomentPressed(_ sender: UIButton) {
         let newMoment = Moment()

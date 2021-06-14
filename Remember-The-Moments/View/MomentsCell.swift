@@ -10,6 +10,7 @@ import UIKit
 class MomentsCell: UICollectionViewCell {
 
     @IBOutlet weak var cellImage: UIImageView!
+    @IBOutlet weak var star: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

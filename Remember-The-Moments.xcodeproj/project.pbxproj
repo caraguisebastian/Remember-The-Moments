@@ -7,14 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C7B4A5E26775A5C00D22426 /* SingleMomentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7B4A5D26775A5C00D22426 /* SingleMomentViewController.swift */; };
 		8C9252DF267609CB00A4A4AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9252DE267609CB00A4A4AF /* AppDelegate.swift */; };
 		8C9252E1267609CB00A4A4AF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9252E0267609CB00A4A4AF /* SceneDelegate.swift */; };
 		8C9252E3267609CB00A4A4AF /* PlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9252E2267609CB00A4A4AF /* PlacesViewController.swift */; };
 		8C9252E6267609CB00A4A4AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C9252E4267609CB00A4A4AF /* Main.storyboard */; };
 		8C9252E8267609CE00A4A4AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C9252E7267609CE00A4A4AF /* Assets.xcassets */; };
 		8C9252EB267609CE00A4A4AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C9252E9267609CE00A4A4AF /* LaunchScreen.storyboard */; };
-		8C925320267628AE00A4A4AF /* PlacesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C92531E267628AE00A4A4AF /* PlacesCell.swift */; };
-		8C925321267628AE00A4A4AF /* PlacesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C92531F267628AE00A4A4AF /* PlacesCell.xib */; };
 		8C92532526762B1500A4A4AF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C92532426762B1500A4A4AF /* Constants.swift */; };
 		8C9253282676317400A4A4AF /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9253272676317400A4A4AF /* Place.swift */; };
 		8C92532C267644F400A4A4AF /* AddPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C92532B267644F400A4A4AF /* AddPlaceViewController.swift */; };
@@ -30,6 +29,7 @@
 		2E36B7717881CC929C289C6B /* Pods-Remember-The-Moments.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Remember-The-Moments.release.xcconfig"; path = "Target Support Files/Pods-Remember-The-Moments/Pods-Remember-The-Moments.release.xcconfig"; sourceTree = "<group>"; };
 		76BE4A43F4F171FBAE61FB68 /* Pods_Remember_The_Moments.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Remember_The_Moments.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7823E81325E1E221EDD0CF07 /* Pods-Remember-The-Moments.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Remember-The-Moments.debug.xcconfig"; path = "Target Support Files/Pods-Remember-The-Moments/Pods-Remember-The-Moments.debug.xcconfig"; sourceTree = "<group>"; };
+		8C7B4A5D26775A5C00D22426 /* SingleMomentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleMomentViewController.swift; sourceTree = "<group>"; };
 		8C9252DB267609CB00A4A4AF /* Remember-The-Moments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Remember-The-Moments.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C9252DE267609CB00A4A4AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C9252E0267609CB00A4A4AF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,8 +38,6 @@
 		8C9252E7267609CE00A4A4AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C9252EA267609CE00A4A4AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8C9252EC267609CE00A4A4AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8C92531E267628AE00A4A4AF /* PlacesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesCell.swift; sourceTree = "<group>"; };
-		8C92531F267628AE00A4A4AF /* PlacesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlacesCell.xib; sourceTree = "<group>"; };
 		8C92532426762B1500A4A4AF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8C9253272676317400A4A4AF /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		8C92532B267644F400A4A4AF /* AddPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlaceViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +101,7 @@
 				8C92532B267644F400A4A4AF /* AddPlaceViewController.swift */,
 				8C925330267681FB00A4A4AF /* MomentsViewController.swift */,
 				8C92533C26769A1300A4A4AF /* AddMomentViewController.swift */,
+				8C7B4A5D26775A5C00D22426 /* SingleMomentViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -111,8 +110,6 @@
 			isa = PBXGroup;
 			children = (
 				8C9252E4267609CB00A4A4AF /* Main.storyboard */,
-				8C92531E267628AE00A4A4AF /* PlacesCell.swift */,
-				8C92531F267628AE00A4A4AF /* PlacesCell.xib */,
 				8C92533F2676B5D600A4A4AF /* MomentsCell.swift */,
 				8C9253402676B5D600A4A4AF /* MomentsCell.xib */,
 			);
@@ -208,7 +205,6 @@
 				8C9253422676B5D600A4A4AF /* MomentsCell.xib in Resources */,
 				8C9252E8267609CE00A4A4AF /* Assets.xcassets in Resources */,
 				8C9252E6267609CB00A4A4AF /* Main.storyboard in Resources */,
-				8C925321267628AE00A4A4AF /* PlacesCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +264,7 @@
 				8C92532C267644F400A4A4AF /* AddPlaceViewController.swift in Sources */,
 				8C9252DF267609CB00A4A4AF /* AppDelegate.swift in Sources */,
 				8C9252E1267609CB00A4A4AF /* SceneDelegate.swift in Sources */,
-				8C925320267628AE00A4A4AF /* PlacesCell.swift in Sources */,
+				8C7B4A5E26775A5C00D22426 /* SingleMomentViewController.swift in Sources */,
 				8C9253282676317400A4A4AF /* Place.swift in Sources */,
 				8C92533D26769A1300A4A4AF /* AddMomentViewController.swift in Sources */,
 				8C92533A26768F1C00A4A4AF /* Moment.swift in Sources */,

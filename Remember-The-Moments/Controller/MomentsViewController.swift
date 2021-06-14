@@ -11,8 +11,12 @@ import RealmSwift
 class MomentsViewController: UIViewController{
     
     @IBOutlet weak var placeName: UILabel!
-    @IBOutlet weak var myCollectionView: UICollectionView!
+    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var placeNameView: UIView!
+    @IBOutlet weak var viewOfCollectionView: UIView!
+    
     let realm = try! Realm()
+    var selectedMoment: Moment?
     var moments: Results<Moment>?
     var selectedPlace: Place? {
         didSet{
@@ -24,9 +28,13 @@ class MomentsViewController: UIViewController{
         DispatchQueue.main.async {
             self.placeName.text = self.selectedPlace?.name
         }
-        myCollectionView.dataSource = self
-        myCollectionView.delegate = self
-        myCollectionView.register(UINib(nibName: K.collectionCellNibName, bundle: nil), forCellWithReuseIdentifier: K.collectionCellIdentifier)
+        collectionView.dataSource = self
+        collectionView.delegate = self
+        collectionView.register(UINib(nibName: K.collectionCellNibName, bundle: nil), forCellWithReuseIdentifier: K.collectionCellIdentifier)
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: K.backgroundImage)!)
+        collectionView.backgroundColor = .clear
+        viewOfCollectionView.backgroundColor = .clear
+        placeNameView.backgroundColor = .clear
         loadMoments()
     }
     
@@ -35,17 +43,25 @@ class MomentsViewController: UIViewController{
     }
     
     func loadMoments(){
-        moments = selectedPlace?.moments.sorted(byKeyPath: "story")
+        moments = selectedPlace?.moments.sorted(byKeyPath: "favorite", ascending: false)
         
-//        myCollectionView.reloadData()
+        DispatchQueue.main.async {
+            self.collectionView.reloadData()
+        }
+        
     }
     
     @IBAction func addButtonPressed(_ sender: UIBarButtonItem) {
         performSegue(withIdentifier: K.addMomentSegue, sender: self)
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let destination = segue.destination as! AddMomentViewController
-        destination.place = selectedPlace
+        if segue.identifier == K.addMomentSegue{
+            let destination = segue.destination as! AddMomentViewController
+            destination.place = selectedPlace
+        } else{
+            let destination = segue.destination as! SingleMomentViewController
+            destination.selectedMomemt = selectedMoment
+        }
     }
 }
 
@@ -57,11 +73,20 @@ extension MomentsViewController: UICollectionViewDataSource{
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: K.collectionCellIdentifier, for: indexPath) as! MomentsCell
-        cell.cellImage.image = UIImage(data: moments?[indexPath.row].fileData ?? UIImage(named: "peepoHappy")!.pngData()!)
+        if let moment = moments?[indexPath.row]{
+        cell.cellImage.image = UIImage(data: moment.fileData)
+        cell.backgroundColor = .clear
+        cell.star.isHidden = moment.favorite ? false : true
+        }
         return cell
     }
 }
 
+
+//MARK: - CollectionViewDelegate methods
 extension MomentsViewController: UICollectionViewDelegate{
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        selectedMoment = moments?[indexPath.row]
+        performSegue(withIdentifier: K.singleMoment, sender: self)
+    }
 }

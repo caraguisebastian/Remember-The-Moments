@@ -8,10 +8,11 @@
 import Foundation
 
 class K{
-    static let cellIdentifier = "ReusableCell"
-    static let cellNibName = "PlacesCell"
+    static let tableViewCell = "tempCell"
     static let momentsSegue = "PlacesToMoments"
     static let collectionCellIdentifier = "CollectionCell"
     static let collectionCellNibName = "MomentsCell"
     static let addMomentSegue = "MomentsToAdd"
+    static let backgroundImage = "blue-stars-6611.jpeg"
+    static let singleMoment = "goToMoment"
 }

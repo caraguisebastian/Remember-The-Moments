@@ -12,10 +12,18 @@ class AddPlaceViewController: UIViewController{
     
     @IBOutlet weak var imageSelected: UIImageView!
     @IBOutlet weak var nameField: UITextField!
+    
+    @IBOutlet weak var textFieldView: UIView!
+    @IBOutlet weak var addPictureButtonView: UIView!
+    @IBOutlet weak var addPlaceButtonView: UIView!
     let realm = try! Realm()
     var imagePicker = UIImagePickerController()
     
     override func viewDidLoad() {
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: K.backgroundImage)!)
+        textFieldView.backgroundColor = .clear
+        addPictureButtonView.backgroundColor = .clear
+        addPlaceButtonView.backgroundColor = .clear
     }
   
     @IBAction func addPlacePressed(_ sender: UIButton) {

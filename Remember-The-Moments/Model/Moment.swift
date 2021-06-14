@@ -11,5 +11,6 @@ import RealmSwift
 class Moment: Object{
     @objc dynamic var story: String = ""
     @objc dynamic var fileData: Data =  UIImage(named:"peepoHappy")!.pngData()!
+    @objc dynamic var favorite: Bool = false
     var parentCategory = LinkingObjects(fromType: Place.self, property: "moments")
 }
