@@ -87,7 +87,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="iSs-lS-NWn">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="iSs-lS-NWn">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cu3-P8-NxT">
@@ -100,18 +100,17 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="linkColor"/>
                                         <constraints>
                                             <constraint firstItem="Ws3-iD-zMr" firstAttribute="centerY" secondItem="cu3-P8-NxT" secondAttribute="centerY" id="Jcn-Ic-pJT"/>
-                                            <constraint firstAttribute="height" constant="50" id="c4h-mT-sXE"/>
+                                            <constraint firstAttribute="height" constant="50" id="MtE-dW-mIY"/>
                                             <constraint firstItem="Ws3-iD-zMr" firstAttribute="centerX" secondItem="cu3-P8-NxT" secondAttribute="centerX" id="nIc-B5-SUS"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JHA-dL-fJ5">
-                                        <rect key="frame" x="0.0" y="70" width="414" height="704"/>
+                                        <rect key="frame" x="0.0" y="60" width="414" height="714"/>
                                         <subviews>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="B9i-nC-Cu0">
-                                                <rect key="frame" x="10" y="10" width="394" height="684"/>
+                                                <rect key="frame" x="10" y="10" width="394" height="694"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="sAK-sw-uUh">
                                                     <size key="itemSize" width="128" height="128"/>
@@ -122,7 +121,6 @@
                                                 <cells/>
                                             </collectionView>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="B9i-nC-Cu0" secondAttribute="trailing" constant="10" id="LK2-b2-WDp"/>
                                             <constraint firstItem="B9i-nC-Cu0" firstAttribute="leading" secondItem="JHA-dL-fJ5" secondAttribute="leading" constant="10" id="ST6-sf-oqW"/>
@@ -131,6 +129,15 @@
                                         </constraints>
                                     </view>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="JHA-dL-fJ5" firstAttribute="leading" secondItem="iSs-lS-NWn" secondAttribute="leading" id="6WJ-DR-PL6"/>
+                                    <constraint firstItem="cu3-P8-NxT" firstAttribute="top" secondItem="iSs-lS-NWn" secondAttribute="top" id="6gJ-ch-I5T"/>
+                                    <constraint firstAttribute="trailing" secondItem="cu3-P8-NxT" secondAttribute="trailing" id="AQZ-9K-R4u"/>
+                                    <constraint firstItem="JHA-dL-fJ5" firstAttribute="top" secondItem="cu3-P8-NxT" secondAttribute="bottom" constant="10" id="gmV-l5-oYK"/>
+                                    <constraint firstAttribute="trailing" secondItem="JHA-dL-fJ5" secondAttribute="trailing" id="heh-it-xNf"/>
+                                    <constraint firstItem="cu3-P8-NxT" firstAttribute="leading" secondItem="iSs-lS-NWn" secondAttribute="leading" id="n6H-Ps-1sS"/>
+                                    <constraint firstAttribute="bottom" secondItem="JHA-dL-fJ5" secondAttribute="bottom" id="wYb-bk-oiI"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dZF-W9-d3n"/>

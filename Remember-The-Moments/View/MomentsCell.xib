@@ -37,9 +37,11 @@
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
                 <constraint firstItem="WDp-kI-eDi" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="3Go-5K-ljD"/>
+                <constraint firstAttribute="trailing" secondItem="uv0-Wr-7wE" secondAttribute="trailing" id="OJb-SW-nAX"/>
                 <constraint firstAttribute="bottom" secondItem="WDp-kI-eDi" secondAttribute="bottom" id="RvI-l3-iKe"/>
                 <constraint firstItem="WDp-kI-eDi" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Sst-0i-4zg"/>
                 <constraint firstAttribute="trailing" secondItem="uv0-Wr-7wE" secondAttribute="trailing" id="YDj-w5-eER"/>
+                <constraint firstItem="uv0-Wr-7wE" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="k5H-Va-O68"/>
                 <constraint firstItem="uv0-Wr-7wE" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="wAu-1p-VUT"/>
                 <constraint firstAttribute="trailing" secondItem="WDp-kI-eDi" secondAttribute="trailing" id="wPh-Hm-xwm"/>
             </constraints>

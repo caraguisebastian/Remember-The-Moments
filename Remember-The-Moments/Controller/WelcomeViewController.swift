@@ -25,7 +25,7 @@ class WelcomeViewController: UIViewController{
         
         view.layer.add(animation, forKey: "opacity")
         animation.duration = 14
-        var keyFrameAnimation = CAKeyframeAnimation(keyPath: "transform.translation.y")
+        let keyFrameAnimation = CAKeyframeAnimation(keyPath: "transform.translation.y")
         keyFrameAnimation.values = [750.0, 0]
         keyFrameAnimation.keyTimes = [0.0, 1.0]
         keyFrameAnimation.duration = 10
