@@ -8,5 +8,6 @@ target 'Remember-The-Moments' do
   pod 'RealmSwift'
   pod 'SwipeCellKit'
   pod 'IQKeyboardManagerSwift'
+  pod 'CLTypingLabel', '~> 0.4.0'
   
 end

@@ -13,6 +13,6 @@ class K{
     static let collectionCellIdentifier = "CollectionCell"
     static let collectionCellNibName = "MomentsCell"
     static let addMomentSegue = "MomentsToAdd"
-    static let backgroundImage = "blue-stars-6611.jpeg"
+    static let backgroundImage = "RTM"
     static let singleMoment = "goToMoment"
 }

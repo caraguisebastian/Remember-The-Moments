@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8C7B4A5E26775A5C00D22426 /* SingleMomentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7B4A5D26775A5C00D22426 /* SingleMomentViewController.swift */; };
+		8C7B4A6C26778B4000D22426 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7B4A6B26778B4000D22426 /* WelcomeViewController.swift */; };
 		8C9252DF267609CB00A4A4AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9252DE267609CB00A4A4AF /* AppDelegate.swift */; };
 		8C9252E1267609CB00A4A4AF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9252E0267609CB00A4A4AF /* SceneDelegate.swift */; };
 		8C9252E3267609CB00A4A4AF /* PlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9252E2267609CB00A4A4AF /* PlacesViewController.swift */; };
@@ -30,6 +31,7 @@
 		76BE4A43F4F171FBAE61FB68 /* Pods_Remember_The_Moments.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Remember_The_Moments.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7823E81325E1E221EDD0CF07 /* Pods-Remember-The-Moments.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Remember-The-Moments.debug.xcconfig"; path = "Target Support Files/Pods-Remember-The-Moments/Pods-Remember-The-Moments.debug.xcconfig"; sourceTree = "<group>"; };
 		8C7B4A5D26775A5C00D22426 /* SingleMomentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleMomentViewController.swift; sourceTree = "<group>"; };
+		8C7B4A6B26778B4000D22426 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		8C9252DB267609CB00A4A4AF /* Remember-The-Moments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Remember-The-Moments.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C9252DE267609CB00A4A4AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C9252E0267609CB00A4A4AF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				8C925330267681FB00A4A4AF /* MomentsViewController.swift */,
 				8C92533C26769A1300A4A4AF /* AddMomentViewController.swift */,
 				8C7B4A5D26775A5C00D22426 /* SingleMomentViewController.swift */,
+				8C7B4A6B26778B4000D22426 /* WelcomeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 				8C9252E1267609CB00A4A4AF /* SceneDelegate.swift in Sources */,
 				8C7B4A5E26775A5C00D22426 /* SingleMomentViewController.swift in Sources */,
 				8C9253282676317400A4A4AF /* Place.swift in Sources */,
+				8C7B4A6C26778B4000D22426 /* WelcomeViewController.swift in Sources */,
 				8C92533D26769A1300A4A4AF /* AddMomentViewController.swift in Sources */,
 				8C92533A26768F1C00A4A4AF /* Moment.swift in Sources */,
 			);

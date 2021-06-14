@@ -14,6 +14,7 @@ class SingleMomentViewController: UIViewController{
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var favoriteButton: UIBarButtonItem!
+    @IBOutlet weak var viewOfImage: UIView!
     let realm = try! Realm()
     var selectedMomemt: Moment?
     
@@ -23,6 +24,7 @@ class SingleMomentViewController: UIViewController{
             imageView.image = UIImage(data: moment.fileData)
             favoriteButton.image = moment.favorite ?  UIImage(systemName: "heart.slash.fill") : UIImage(systemName: "heart.fill")
             labelView.backgroundColor = .clear
+            viewOfImage.backgroundColor = .clear
             self.view.backgroundColor = UIColor(patternImage: UIImage(named: K.backgroundImage)!)
         }
     }
@@ -39,6 +41,13 @@ class SingleMomentViewController: UIViewController{
             DispatchQueue.main.async {
                 self.favoriteButton.image = moment.favorite ?  UIImage(systemName: "heart.slash.fill") : UIImage(systemName: "heart.fill")
             }
+        }
+    }
+    @IBAction func imagePressed(_ sender: UIButton) {
+        if let moment = selectedMomemt{
+            let items = [UIImage(data: moment.fileData)]
+            let ac = UIActivityViewController(activityItems: items, applicationActivities: nil)
+            present(ac, animated: true)
         }
     }
 }
