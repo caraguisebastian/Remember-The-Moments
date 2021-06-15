@@ -23,6 +23,7 @@
 		8C92533D26769A1300A4A4AF /* AddMomentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C92533C26769A1300A4A4AF /* AddMomentViewController.swift */; };
 		8C9253412676B5D600A4A4AF /* MomentsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C92533F2676B5D600A4A4AF /* MomentsCell.swift */; };
 		8C9253422676B5D600A4A4AF /* MomentsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C9253402676B5D600A4A4AF /* MomentsCell.xib */; };
+		8C992C852678AF2D00529BEF /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C992C842678AF2D00529BEF /* DemoViewController.swift */; };
 		A8372F83C9FE0AB52B860465 /* Pods_Remember_The_Moments.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76BE4A43F4F171FBAE61FB68 /* Pods_Remember_The_Moments.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +49,7 @@
 		8C92533C26769A1300A4A4AF /* AddMomentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMomentViewController.swift; sourceTree = "<group>"; };
 		8C92533F2676B5D600A4A4AF /* MomentsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentsCell.swift; sourceTree = "<group>"; };
 		8C9253402676B5D600A4A4AF /* MomentsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MomentsCell.xib; sourceTree = "<group>"; };
+		8C992C842678AF2D00529BEF /* DemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				8C92533C26769A1300A4A4AF /* AddMomentViewController.swift */,
 				8C7B4A5D26775A5C00D22426 /* SingleMomentViewController.swift */,
 				8C7B4A6B26778B4000D22426 /* WelcomeViewController.swift */,
+				8C992C842678AF2D00529BEF /* DemoViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 				8C9253412676B5D600A4A4AF /* MomentsCell.swift in Sources */,
 				8C92532C267644F400A4A4AF /* AddPlaceViewController.swift in Sources */,
 				8C9252DF267609CB00A4A4AF /* AppDelegate.swift in Sources */,
+				8C992C852678AF2D00529BEF /* DemoViewController.swift in Sources */,
 				8C9252E1267609CB00A4A4AF /* SceneDelegate.swift in Sources */,
 				8C7B4A5E26775A5C00D22426 /* SingleMomentViewController.swift in Sources */,
 				8C9253282676317400A4A4AF /* Place.swift in Sources */,
