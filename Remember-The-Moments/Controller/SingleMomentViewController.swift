@@ -46,7 +46,7 @@ class SingleMomentViewController: UIViewController{
     @IBAction func imagePressed(_ sender: UIButton) {
         if let moment = selectedMomemt{
             let items = [UIImage(data: moment.fileData)]
-            let ac = UIActivityViewController(activityItems: items, applicationActivities: nil)
+            let ac = UIActivityViewController(activityItems: items as [Any], applicationActivities: nil)
             present(ac, animated: true)
         }
     }

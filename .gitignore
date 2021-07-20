@@ -1,5 +1,4 @@
 
-*.lock
 *.pbxproj
 *.xcscheme
 Pods/Pods.xcodeproj/xcuserdata/radumihaiu.xcuserdatad/xcschemes/xcschememanagement.plist

@@ -62,7 +62,7 @@
                         <barButtonItem key="backBarButtonItem" title="Your places" id="trq-tZ-1ge">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </barButtonItem>
-                        <barButtonItem key="leftBarButtonItem" title="Our app" id="IP4-rY-2ZL">
+                        <barButtonItem key="leftBarButtonItem" title="The app" id="IP4-rY-2ZL">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <segue destination="diw-NV-Be0" kind="show" id="JLo-6c-q57"/>
@@ -503,7 +503,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UsE-Zk-c4D">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="382"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to our app! This is a temporary description and a demo video" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gIo-zz-VH3">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to my app! This is a temporary description and a demo video" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gIo-zz-VH3">
                                                 <rect key="frame" x="10" y="30" width="394" height="50.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                 <nil key="textColor"/>
@@ -590,7 +590,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GTa-ap-aWE" customClass="CLTypingLabel" customModule="CLTypingLabel">
-                                <rect key="frame" x="107" y="188" width="200" height="0.0"/>
+                                <rect key="frame" x="107" y="188" width="200" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -622,7 +622,9 @@
         </scene>
     </scenes>
     <designables>
-        <designable name="GTa-ap-aWE"/>
+        <designable name="GTa-ap-aWE">
+            <size key="intrinsicContentSize" width="71" height="36"/>
+        </designable>
     </designables>
     <resources>
         <image name="peepoHappy" width="500" height="500"/>
